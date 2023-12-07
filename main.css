@@ -1,0 +1,1296 @@
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('./fonts/Gilroy-Regular.ttf')format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('./fonts/Gilroy-SemiBold.ttf')format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('./fonts/Gilroy-Bold.ttf')format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Extrabold';
+    src: url('./fonts/Gilroy-ExtraBold.ttf')format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    --primary: #B0F222;
+    --dark-primary: #7DB700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Gilroy-Regular';
+    font-weight: 400;
+    font-size: 12px;
+    overflow-x: hidden;
+}
+
+
+#main-page {
+    background-image: url("./assets/images/bg-1.png");
+    height: 960px;
+}
+
+
+.img-top-left {
+    display: none;
+}
+
+.img-top-right {
+    display: none;
+}
+
+.img-bottom-left {
+    display: none;
+}
+
+.img-bottom-right {
+    display: none;
+}
+
+#main-page .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+}
+
+#main-page .content h2.event-date {
+    font-family: 'Gilroy-Semibold';
+    font-size: 28px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 6.16px;
+}
+
+#main-page .content h1.heading {
+    width: 939px;
+    text-align: center;
+    font-family: 'Gilroy-Extrabold';
+    font-size: 42px;
+    letter-spacing: 0.84px;
+    color: #FFF;
+    margin-top: -40px;
+}
+
+#main-page .content h1.heading span {
+    color: var(--primary);
+}
+
+#main-page .content h3.subheading {
+    font-family: 'Gilroy-Regular';
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 0.68px;
+    color: #FFF;
+    margin-top: 26px;
+}
+
+#main-page .content .subscribe {
+    margin-top: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 31.118px;
+    border: 1.004px solid #FFF;
+    background: linear-gradient(224deg, #FFF -492.57%, rgba(255, 255, 255, 0.00) 113.51%);
+    backdrop-filter: blur(2.509531021118164px);
+    height: 86px;
+    padding: 13.6px 15.24px 16.017px 33.64px;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2px;
+    flex-shrink: 0;
+}
+
+#main-page .content .subscribe p {
+    color: #FFF;
+    font-size: 19px;
+    letter-spacing: 0.95px;
+    margin-right: 19px;
+}
+
+#main-page .content .subscribe button {
+    cursor: pointer;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 44px;
+    width: 268px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #141414;
+    font-size: 24px;
+    letter-spacing: 1.2px;
+}
+
+#main-page .content .subscribe p, .content .subscribe button {
+    font-family: 'Blinker';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#video-page {
+    background-image: url('./assets/images/bg-2.png');
+    height: 874px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-page h2 {
+    margin: 86px 0 47px 0;
+    width: 752px;
+    color: #FFF;
+    text-align: center;
+    font: 400 48px 'Gilroy-Extrabold';
+    line-height: 140%;
+    letter-spacing: 0.96px;
+}
+
+#video-page h2 span {
+    color: var(--primary);
+}
+
+#video-page .video-content {
+    width: 1055px;
+    height: 521px;
+    background: #121212;
+}
+
+#video-page .video-content video {
+    position: absolute;
+    display: none;
+}
+
+#video-page .video-content button {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 111.92px;
+    height: 111.92px;
+    background-color: #000000;;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+#video-page .video-content img {
+    z-index: 0;
+    width: 2rem;
+}
+
+#audience-page {
+    background-image: url('./assets/images/bg-3.png');
+    height: 817px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#audience-page h2 {
+    margin-top: 77px;
+    color: #FFF;
+    text-align: center;
+    font: 400 48px 'Gilroy-Extrabold';
+    line-height: 140%;
+    letter-spacing: 0.96px;
+}
+
+#audience-page h2 span {
+    color: var(--primary);
+}
+
+#audience-page ul {
+    display: flex;
+    margin-top: 160px;
+}
+
+#audience-page ul li {
+    width: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+}
+
+#audience-page ul li .audience-icon-item {
+    border-radius: 50%;
+    width: 99px;
+    height: 99px;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#audience-page ul li .audience-icon-item svg {
+    color: var(--primary);
+    width: 56px;
+    height: 56px;
+}
+
+#audience-page ul li p {
+    margin-top: 39px;
+    color: #FFF;
+    text-align: center;
+    font: 400 24px 'Gilroy-Regular';
+}
+
+#audience-page button {
+    margin-top: 85px;
+    width: 470px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 52px;
+    background-color: var(--primary);
+    color: #141414;
+    text-transform: uppercase;
+    font: 600 32px 'Blinker';
+    letter-spacing: 1.68px;
+}
+
+#news-page {
+    background-image: url('./assets/images/bg-4.png');
+    height: 1453px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#news-page h2 {
+    margin-top: 93px;
+    color: #FFF;
+    text-align: center;
+    font: 400 48px 'Gilroy-Extrabold';
+    line-height: 140%;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+}
+
+#news-page ul.carousel {
+    margin-top: 64px;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+#news-page ul li.carousel-item {
+    flex: 0 0 auto;
+    width: 1080px;
+    height: 475px;
+    background: #eeeeee;
+    margin-right: 20px;
+}
+
+#news-page .news-audience {
+    margin-top: 70px;
+    color: #FFF;
+    display: flex;
+}
+
+#news-page .news-audience .news-audience-text h3 {
+    color: var(--primary);
+    font: 400 48px 'Gilroy-ExtraBold';
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0.96px;
+}
+
+#news-page .news-audience .news-audience-text p {
+    width: 477px;
+    margin-right: 142px;
+    margin-top: 28px;
+    font: 400 24px 'Gilroy-Regular';
+}
+
+#news-page .news-audience .news-audience-text p.highlight {
+    color: var(--primary);
+    font: 400 24px 'Gilroy-Semibold';
+    line-height: 140%;
+}
+
+#news-page .news-audience aside {
+    display: flex;
+    align-items: center;
+}
+
+#news-page .news-audience ol {
+    display: flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+#news-page .news-audience ol li {
+    display: flex;
+}
+
+#news-page .news-audience ol li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #2E2E2E;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.00) 100%);
+    color: var(--primary);
+    font: 400 28px 'Gilroy-Bold';
+    margin-right: 30px;
+}
+
+#news-page .news-audience ol li p {
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    font: 400 22px 'Gilroy-Semibold';
+}
+
+#news-page button {
+    margin-top: 110px;
+    width: 470px;
+    height: 80px;
+    border-radius: 52px;
+    background-color: var(--primary);
+    color: #141414;
+    font: 600 33px 'Blinker';   
+    text-transform: uppercase;
+    letter-spacing: 1.60px;
+}
+
+#bonus-page {
+    height: 810px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bonus-page h2 {
+    margin-top: 62px;
+    width: 767px;
+    color: #000;
+    font: 400 48px 'Gilroy-Extrabold';
+    text-align: center;
+}
+
+#bonus-page .content {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
+    gap: 32px
+}
+
+#bonus-page .content .bonus-item {
+    display: flex;
+    align-items: center;
+}
+
+#bonus-page .content .bonus-item h4 {
+    width: 260px;
+    color: #1D3328;
+    font: 400 20px 'Gilroy-Semibold';
+    text-transform: uppercase;
+}
+
+#bonus-page .content .bonus-item h4 span {
+    color: var(--dark-primary);
+}
+
+#course-page {
+    background-image: url('./assets/images/bg-5.png');
+    height: 1043px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+#course-page h2 {
+    margin-top: 98px;
+    font: 400 48px 'Gilroy-Extrabold';
+    letter-spacing: 0.96px;
+}
+
+#course-page h2 span {
+    color: var(--primary);
+}
+
+#course-page .classes-container {
+    display: flex;
+    margin-top: 60px;
+}
+
+#course-page .classes-container .class-item {
+    border: 1px solid #4D4D4D;
+    width: 368px;
+    height: 572px;
+    padding: 29px 51px 0 51px;
+    font: 400 14px 'Gilroy-Regular';
+}
+
+#course-page .classes-container .class-item h3 {
+    color: var(--primary);
+    letter-spacing: 7.023px;
+    text-transform: uppercase;
+}
+
+#course-page .classes-container .class-item h3 span {
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    margin-left: 24px;
+}
+
+#course-page .classes-container .class-item h4 {
+    margin-top: 20px;
+    font: 400 16px 'Gilroy-Semibold';
+    text-transform: uppercase;
+}
+
+#course-page .classes-container .class-item p {
+    margin-top: 16px;
+    color: #ABABAB;
+    font-size: 14px;
+}
+
+#course-page button {
+    margin-top: 78px;
+    width: 470px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 52px;
+    background-color: var(--primary);
+    color: #141414;
+    font: 600 32px 'Blinker';
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+#form-page {
+    height: 960px;
+    background-image: url('./assets/images/bg-6.png');
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 152px;
+}
+
+#form-page .form-presentation {
+    width: 505px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 22px;
+}
+
+#form-page .form-presentation h2 {
+    font: 400 42px 'Gilroy-Extrabold';
+    line-height: 140%;
+    letter-spacing: 0.84px;
+}
+
+#form-page .form-presentation h2 span {
+    color: var(--primary);
+}
+
+#form-page .form-presentation p {
+    width: 448px;
+    margin-top: 60px;
+    font: 400 24px 'Gilroy-Regular';
+    line-height: 140%;
+}
+
+#form-page form {
+    width: 568px;
+    height: 758px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    margin-left: 202px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-page form h2 {
+    margin-top: 34px;
+    color: #FFF;
+    font: 400 42px 'Gilroy-Extrabold';
+    letter-spacing: 0.84px;
+}
+
+#form-page form h2 span {
+    color: var(--primary);
+}
+
+#form-page form input {
+    margin-top: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.36);
+    width: 445px;
+    height: 71px;
+    color: #FFF;
+    padding-left: 22px;
+    transition: border-color 1s ease-in-out;
+}
+
+#form-page form input:focus, #form-page form input:focus-visible  {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#form-page form button {
+    margin: 45px 0;
+    width: 445px;
+    height: 80px;
+    border-radius: 52px;
+    background: var(--primary);
+    color: #141414;
+    font: 600 32px 'Blinker';
+    letter-spacing: 1.60px;
+    text-transform: uppercase;
+}
+
+
+/*======================================================*/
+/*======================= DESKTOP ======================*/
+/*======================================================*/
+
+@media (max-width: 1488px) {
+    #main-page {
+        height: 742px;
+    }
+
+    #main-page .content h2.event-date {
+        font-size: 24px;
+    }
+
+    #main-page .content img {
+        width: 400px;
+    }
+
+    #main-page .content h1.heading {
+        font-size: 38px;
+        margin-top: -44px;
+    }
+
+    #main-page .content h3.subheading {
+        font-size: 30px;
+        margin-top: 22px;
+    }
+
+    #main-page .content .subscribe {
+        margin-top: 30px;
+        border-radius: 30px;
+        height: 82px;
+        gap: 18px;
+    }
+
+    #main-page .content .subscribe p {
+        font-size: 16px;
+    }
+
+    #main-page .content .subscribe button {
+        border-radius: 44px;
+        width: 258px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    #video-page {
+        height: 800px;
+    }
+
+    #video-page h2 {
+        margin: 60px 0 38px 0;
+        font-size: 44px;
+        width: 730px;
+    }
+
+    #video-page .video-content {
+        width: 1000px;
+        height: 494px;
+    }
+
+    #video-page .video-content button {
+        width: 100px;
+        height: 100px;
+    }
+
+    #video-page .video-content img {
+        width: 1.9rem;
+    }
+
+    #audience-page h2 {
+        margin-top: 60px;
+        font-size: 44px;
+    }
+
+    #audience-page ul {
+        margin-top: 120px;
+    }
+
+    #audience-page ul li {
+        padding: 0 20px;
+        width: 344px;
+    }
+
+    #audience-page ul li .audience-icon-item {
+        width: 90px;
+        height: 90px;
+    }
+
+    #audience-page ul li .audience-icon-item svg {
+        width: 46px;
+        height: 46px;
+    }
+
+    #audience-page ul li p {
+        margin-top: 36px;
+        font-size: 22px;
+    }
+
+    #audience-page button {
+        margin-top: 78px;
+        width: 464px;
+        height: 74px;
+        font-size: 30px;
+    }
+
+    #news-page {
+        height: 1380px;
+    }
+
+    #news-page h2 {
+        margin-top: 80px;
+        font-size: 46px;
+    }
+
+    #news-page ul.carousel {
+        margin-top: 56px;
+    }
+
+    #news-page ul li.carousel-item {
+        width: 1000px;
+        height: 456px;
+    }
+
+    #news-page .news-audience .news-audience-text h3 {
+        font-size: 46px;
+    }
+
+    #news-page .news-audience .news-audience-text p {
+        width: 446px;
+        margin-right: 128px;
+        margin-top: 24px;
+        font-size: 22px;
+    }
+
+    #news-page .news-audience ol li span {
+        width: 76px;
+        height: 76px;
+        font-size: 26px;
+        margin-right: 26px;
+    }
+
+    #news-page button {
+        margin-top: 100px;
+        width: 464px;
+        height: 74px;
+        font-size: 30px;
+    }
+
+    #bonus-page {
+        height: 780px;
+    }
+
+    #bonus-page h2 {
+        font-size: 44px;
+    }
+
+    #bonus-page .content {
+        margin-top: 54px;
+        gap: 30px;
+    }
+
+    #bonus-page .content .bonus-item img {
+        width: 170px;
+    }
+
+    #bonus-page .content .bonus-item h4 {
+        font-size: 20px;
+    }
+
+    #course-page {
+        height: 1000px;
+    }
+
+    #course-page h2 {
+        margin-top: 80px;
+        font-size: 44px;
+    }
+
+    #course-page .classes-container {
+        margin-top: 52px;
+    }
+
+    #course-page button {
+        margin-top: 60px;
+        width: 464px;
+        height: 74px;
+        font-size: 30px;
+    }
+
+    #form-page {
+        padding-top: 90px;
+        height: 920px;
+    }
+
+    #form-page .form-presentation h2 {
+        font-size: 42px;
+        margin-top: 44px;
+    }
+
+    #form-page .form-presentation p {
+        font-size: 22px;
+    }
+
+    #form-page form {
+        margin-left: 140px;
+        width: 550px;
+    }
+
+    #form-page form h2 {
+        font-size: 40px;
+    }
+
+    #form-page form input {
+        width: 418px;
+        height: 60px;
+    }
+
+    #form-page form button {
+        width: 418px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+/*======================================================*/
+/*===================== BIG LAPTOP =====================*/
+/*======================================================*/
+@media (max-width: 1280px) {
+    #main-page {
+        height: 563px;
+    }
+    
+    #main-page .content h2.event-date {
+        font-size: 18px;
+    }
+
+    #main-page .content img {
+        width: 300px;
+    }
+
+    #main-page .content h1.heading {
+        font-size: 28px;
+        margin-top: -48px;
+        width: 630px;
+    }
+
+    #main-page .content h3.subheading {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+
+    #main-page .content .subscribe {
+        border-radius: 24px;
+        height: 68px;
+    }
+
+    #main-page .content .subscribe p {
+        font-size: 14px;
+    }
+
+    #main-page .content .subscribe button {
+        border-radius: 28px;
+        width: 232px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    #video-page {
+        height: 690px;
+    }
+
+    #video-page h2 {
+        margin: 48px 0 32px 0;
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    #video-page .video-content {
+        width: 820px;
+        height: 406px;
+    }
+
+    #audience-page h2 {
+        margin-top: 48px;
+        font-size: 40px;
+    }
+
+    #video-page .video-content button {
+        width: 80px;
+        height: 80px;
+    }
+
+    #audience-page { 
+        height: 606px;
+    }
+
+    #audience-page ul {
+        margin-top: 84px;
+    }
+
+    #audience-page ul li {
+        width: 318px;
+    }
+
+    #audience-page ul li .audience-icon-item {
+        width: 80px;
+        height: 80px;
+    }
+
+    #audience-page ul li .audience-icon-item svg {
+        width: 34px;
+        height: 34px;
+    }
+
+    #audience-page ul li p {
+        margin-top: 24px;
+        font-size: 18px;
+    }
+
+    #audience-page button {
+        margin-top: 70px;
+        width: 372px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #news-page {
+        height: 1120px;
+    }
+
+    #news-page h2 {
+        margin-top: 64px;
+        font-size: 42px;
+    }
+
+    #news-page ul.carousel {
+        margin-top: 44px;
+    }
+
+    #news-page ul li.carousel-item {
+        width: 820px;
+        height: 376px;
+    }
+
+    #news-page .news-audience {
+        margin-top: 64px;
+    }
+
+    #news-page .news-audience .news-audience-text p {
+        width: 376px;
+        margin-right: 72px;
+        margin-top: 18px;
+        font-size:18px;
+    }
+
+    #news-page .news-audience .news-audience-text p.highlight {
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    #news-page .news-audience ol {
+        gap: 56px;
+    }
+
+    #news-page .news-audience ol li span {
+        width: 64px;
+        height: 64px;
+        font-size: 20px;
+    }
+
+    #news-page .news-audience ol li p {
+        font-size: 18px;
+    }
+
+    #news-page button {
+        margin-top: 72px;
+        width: 342px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    #bonus-page {
+        height: 700px;
+    }
+
+    #bonus-page h2 {
+        margin-top: 56px;
+        width: 700px;
+        font-size: 40px;
+    }
+
+    #bonus-page .content {
+        margin-top: 48px;
+        gap: 24px;
+    }
+
+    #bonus-page .content .bonus-item img {
+        width: 142px;
+    }
+    
+    #bonus-page .content .bonus-item h4 {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    #course-page {
+        height: 890px;
+    }
+
+    #course-page h2 {
+        margin-top: 64px;
+        font-size: 40px;
+        letter-spacing: 0.8px;
+    }
+
+    #course-page .classes-container {
+        margin-top: 36px;
+    }
+
+    #course-page .classes-container .class-item {
+        width: 340px;
+        height: 530px;
+        padding: 29px 36px 0 36px;
+    }
+
+    #course-page button {
+        margin-top: 56px;
+        width: 342px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    #form-page {
+        padding-top: 72px;
+        height: 812px;
+    }
+
+    #form-page .form-presentation h2 {
+        font-size: 38px;
+        line-height: 120%;
+    }
+
+    #form-page .form-presentation p {
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    #form-page form {
+        margin-left: 64px;
+        width: 490px;
+        height: 648px;
+    }
+
+    #form-page form h2 {
+        font-size: 36px;
+    }
+
+    #form-page form input {
+        width: 370px;
+        height: 48px;
+        font-size: 11px;
+    }
+
+    #form-page form button {
+        width: 370px;
+        height: 48px;
+        font-size: 20px;
+        margin: 42px 0;
+    }
+}
+
+/*======================================================*/
+/*=================== TABLET / MOBILE ==================*/
+/*======================================================*/
+
+@media (max-width: 768px) {
+    #main-page {
+        height: 932px;
+    }
+
+    #main-page .content {
+        padding-top: 0;
+        height: 100%;
+        justify-content: center;
+    }
+
+    #main-page .content h2.event-date {
+        font-size:16px;
+    }
+
+    #main-page .content img {
+        margin-top: 72px;
+    }
+
+    #main-page .content h1.heading {
+        font-size: 24px;
+        margin-top: 38px;
+        width: 90vw;
+    }
+
+    #main-page .content h3.subheading {
+        font-size: 16px;
+        margin-top: 24px;
+    }
+
+    #main-page .content .subscribe {
+        margin-top: 56px;
+        padding: 10px 12px 10px 24px;
+    }
+
+    #main-page .content .subscribe p {
+        margin: 0;
+    }
+
+    #main-page .content .subscribe button {
+        width: 148px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    #video-page {
+        height: 570px;
+    }
+
+    #video-page h2 {
+        font-size: 32px;
+        width: 90vw;
+        margin: 72px 0 56px 0;
+    }
+
+    #video-page .video-content {
+        width: 320px;
+        height: 200px;
+    }
+
+    #video-page .video-content button {
+        width: 60px;
+        height: 60px;
+    }
+
+    #video-page .video-content img {
+        width: 1.2rem;
+    }
+
+    #audience-page {
+        height: 1232px;
+        background-size: cover;
+    }
+
+    #audience-page h2 {
+        font-size: 32px;
+        line-height: 120%;
+        margin-top: 72px;
+    }
+
+    #audience-page ul {
+        flex-direction: column;
+    }
+
+    #audience-page ul li {
+        width: 60vw;
+        margin-bottom: 72px;
+    }
+
+    #audience-page ul li .audience-icon-item {
+        width: 100px;
+        height: 100px;
+    }
+
+    #audience-page ul li .audience-icon-item svg {
+        width: 42px;
+        height: 42px;
+    }
+
+    #audience-page button {
+        width: 80vw;
+        max-width: 352px;
+        margin-top: 32px;
+    }
+
+    #news-page {
+        height: 1320px;
+    }
+
+    #news-page h2 {
+        margin-top: 72px;
+        line-height: 120%;
+        font-size: 32px;
+    }
+
+    #news-page ul li.carousel-item {
+        width: 320px;
+        height: 210px;
+    }
+
+    #news-page .news-audience {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #news-page .news-audience .news-audience-text {
+        margin-bottom: 64px;
+    }
+
+    #news-page .news-audience .news-audience-text h3 {
+        font-size: 36px;
+    }
+
+    #news-page .news-audience .news-audience-text p {
+        margin-right: 0;
+        width: 80vw;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    #news-page .news-audience aside {
+        width: 80vw;
+    }
+
+    #news-page .news-audience ol li p {
+        width: 60vw;
+    }
+
+    #news-page button {
+        width: 80vw;
+        max-width: 352px;
+        margin-top: 56px;
+    }
+
+    #bonus-page {
+        height: 1180px;
+    }
+
+    #bonus-page h2 {
+        width: 80vw;
+        font-size: 32px;
+    }
+
+    #bonus-page .content {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    #course-page {
+        height: 1960px;
+        background-size: cover;
+    }
+
+    #course-page h2 {
+        text-align: center;
+        width: 80vw;
+        font-size: 32px;
+    }
+
+    #course-page .classes-container {
+        flex-direction: column;
+    }
+
+    #course-page .classes-container .class-item h4 {
+        font-size: 18px;
+    }
+
+    #course-page button {
+        width: 80vw;
+        max-width: 352px;
+    }
+
+    #form-page {
+        flex-direction: column;
+        height: unset;
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+    }
+
+    #form-page .form-presentation {
+        width: 80vw;
+    }
+
+    #form-page .form-presentation h2 {
+        margin-top: 0;
+        font-size: 32px;
+    }
+
+    #form-page .form-presentation p {
+        width: 80vw;
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    #form-page form {
+        width: 85vw;
+        margin: 56px 0 64px 0;
+    }
+
+    #form-page form h2 {
+        font-size: 32px;
+    }
+
+    #form-page form input {
+        width: 70vw;
+    }
+
+    #form-page form button {
+        width: 70vw;
+        max-width: 320px;
+    }
+}
