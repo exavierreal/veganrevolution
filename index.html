@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Revolution</title>
 
+    <link rel="icon" href="./superbom.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap" rel="stylesheet">
@@ -38,11 +40,11 @@
         <h2>Seu negócio está prestes a passar por uma <span>revolução...</span></h2>
 
         <div class="video-content">
-            <video width="1055" height="521">
+            <video controls id="myVideo" width="1055" height="521">
                 <source src="./assets/videos/video-1.mp4">
             </video>
 
-            <button id="playVideoBtn">
+            <button id="playVideoBtn" onclick="toggleVideo()">
                 <img src="./assets/icons/icon-video.png" alt="Teste">
             </button>
         </div>
@@ -98,10 +100,6 @@
         <h2>O mercado está mudando...</h2>
 
         <ul class="carousel">
-            <li class="carousel-item"></li>
-            <li class="carousel-item"></li>
-            <li class="carousel-item"></li>
-            <li class="carousel-item"></li>
             <li class="carousel-item"></li>
         </ul>
 

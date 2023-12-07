@@ -1,12 +1,22 @@
-function obterTamanhoDaTela() {
-    // Obtém as dimensões da janela visível
-    var larguraDaJanela = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var alturaDaJanela = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+var video = document.getElementById("myVideo");
+var button = document.getElementById("playVideoBtn");
 
-    // Exibe as dimensões no formato "widthxheight"
-    console.log(larguraDaJanela + "x" + alturaDaJanela);
-  }
+function toggleVideo() {
+    if (video.paused || video.ended) {
+        video.play();
+        button.style.display = "none";
+        video.style.display = "block";
+    } else {
+        video.pause();
+        button.style.display = "block";
+        video.style.display = "none";
+    }
+}
 
-  // Chama a função ao carregar a página e ao redimensionar a janela
-  window.onload = obterTamanhoDaTela;
-  window.onresize = obterTamanhoDaTela;
+video.addEventListener("pause", function() {
+  button.style.display = "block";
+});
+
+video.addEventListener("ended", function() {
+  button.style.display = "block";
+});
